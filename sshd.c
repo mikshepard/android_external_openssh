@@ -1572,7 +1572,6 @@ main(int ac, char **av)
 		xfree(privsep_pw->pw_passwd);
 		privsep_pw->pw_passwd = xstrdup("*");
 	}
-	endpwent();
 
 	/* load private host keys */
 	sensitive_data.host_keys = xcalloc(options.num_host_key_files,
